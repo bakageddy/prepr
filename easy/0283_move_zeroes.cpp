@@ -12,8 +12,7 @@ public:
 				while (j >= 0 && nums[j] == 0) {
 					int temp = nums[j + 1];
 					nums[j + 1] = nums[j];
-					nums[j] = temp;
-					j--;
+					nums[j--] = temp;
 				}
 			}
 		}
