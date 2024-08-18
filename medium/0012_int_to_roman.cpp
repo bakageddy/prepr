@@ -1,26 +1,59 @@
+#include <iostream>
 #include <string>
-#include <unordered_map>
-using std::string, std::unordered_map;
+#include <array>
+using std::string, std::array;
 
-static unordered_map<int, string> lookup_table = {
-	{1, "I"},
-	{2, "II"},
-	{3, "III"},
-	{4, "IV"},
-	{5, "V"},
-	{6, "VI"},
-	{7, "VII"},
-	{8, "VIII"},
-	{9, "IX"},
-	{10, "X"},
-	{50, "L"},
-	{100, "C"},
-	{500, "D"},
-	{1000, "M"},
+static std::array<string, 13> values = {
+	"M",
+	"CM",
+	"D",
+	"CD",
+	"C",
+	"XC",
+	"L",
+	"XL",
+	"X",
+	"IX",
+	"V",
+	"IV",
+	"I"
+};
+
+static std::array<int, 13> int_values = {
+	1000,
+	900,
+	500,
+	400,
+	100,
+	90,
+	50,
+	40,
+	10,
+	9,
+	5,
+	4,
+	1
 };
 
 class Solution {
 public:
     string intToRoman(int num) {
+		string ans = {};
+		int i = 0;
+		while (i < int_values.size() && num > 0) {
+			if (num >= int_values[i]) {
+				ans.append(values[i]);
+				num -= int_values[i];
+			} else {
+				i++;
+			}
+		}
+		return ans;
     }
 };
+
+int main(void) {
+	Solution sol = {};
+	std::cout << sol.intToRoman(1450) << '\n';
+	return 0;
+}
