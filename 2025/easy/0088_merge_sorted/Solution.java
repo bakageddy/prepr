@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 		if (m == 0 && n == 0) return;

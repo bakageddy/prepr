@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
 	public int searchInsert(int[] nums, int target) {
 		return binary_search(nums, target);

@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
 	public int lengthOfLastWord(String word) {
 		int length = word.length();

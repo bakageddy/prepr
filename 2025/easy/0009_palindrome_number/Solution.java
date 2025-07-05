@@ -1,3 +1,5 @@
+package dev.bakageddy.prepr;
+
 public class Solution {
 	private boolean helper(int x) {
 		int original = x;

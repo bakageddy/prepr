@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
 	public String find_minimum_string(String[] strings) {
 		int min = strings[0].length();

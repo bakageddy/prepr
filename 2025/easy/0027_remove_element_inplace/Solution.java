@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
     public int removeElement(int[] nums, int val) {
 		int overwrite = 0;

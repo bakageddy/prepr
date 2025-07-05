@@ -1,3 +1,5 @@
+package dev.bakageddy.prepr;
+
 import java.util.HashMap;
 
 public class Solution {

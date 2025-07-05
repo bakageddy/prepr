@@ -1,3 +1,4 @@
+package dev.bakageddy.prepr;
 public class Solution {
 	public String addBinary(String a, String b) {
 		int alen = a.length();
