@@ -42,7 +42,6 @@ public class Solution {
 		output.addLast(root.val);
 		if (root.left == null && root.right == null && targetSum == currentSum) {
 			acc.add(new ArrayList<>(output));
-			return;
 		}
 		helper(acc, output, root.left, targetSum, currentSum);
 		helper(acc, output, root.right, targetSum, currentSum);
