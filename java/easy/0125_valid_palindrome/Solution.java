@@ -1,3 +1,5 @@
+package dev.bakageddy.prepr;
+
 public class Solution {
     public boolean isPalindrome(String s) {
 		// NOTE: I am dumb

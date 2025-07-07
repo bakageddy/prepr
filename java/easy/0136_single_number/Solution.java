@@ -1,3 +1,5 @@
+package dev.bakageddy.prepr;
+
 public class Solution {
 	public int singleNumber(int[] nums) {
 		int a = 0;
